@@ -1,0 +1,13 @@
+{
+  "name": "net-client",
+  "version": "0.0.1",
+  "description": "net,client",
+  "main": "dist/index.js",
+  "repository": "https://github.com/TuRing-CDS/net-client.git",
+  "author": "I'amee <admin@cavacn.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/debug": "^0.0.29",
+    "debug": "^2.6.8"
+  }
+}
