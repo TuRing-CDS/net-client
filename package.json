@@ -6,8 +6,29 @@
   "repository": "https://github.com/TuRing-CDS/net-client.git",
   "author": "I'amee <admin@cavacn.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "./node_modules/.bin/jest --ci --coverage --no-cache"
+  },
   "dependencies": {
     "@types/debug": "^0.0.29",
+    "@types/node": "^8.0.9",
     "debug": "^2.6.8"
+  },
+  "devDependencies": {
+    "@types/jest": "^20.0.2",
+    "jest": "^20.0.4",
+    "ts-jest": "^20.0.7",
+    "typescript": "^2.4.1"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "/src/__test__/.*.test.ts$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
   }
 }
